@@ -1,0 +1,53 @@
+.inner{
+    background-color: rgb(241, 239, 235);
+    margin: 8px;
+    box-sizing: border-box;
+    
+}
+
+.outer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    "one two three three"
+    "one four five six"
+    "seven eight five nine"
+    "ten eight eleven eleven";
+    height: 700px;
+}
+
+#i1, #i5{
+    grid-area: one;
+} 
+#i2{
+    grid-area: two;
+}
+#i3, #i4{
+    grid-area: four;
+}
+#i6{
+    grid-area: three;
+}
+
+#i7, #i11{
+    grid-area: five;
+}
+#i8{
+    grid-area: six;
+}
+#i9{
+    grid-area: seven;
+}
+#i10, #i14{
+    grid-area: eight;
+}
+#i12{
+    grid-area: nine;
+}
+#i13{
+    grid-area: ten;
+}
+#i15, #i16{
+    grid-area: eleven;
+}
